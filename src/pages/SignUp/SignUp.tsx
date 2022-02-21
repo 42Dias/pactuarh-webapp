@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FiEye } from 'react-icons/fi'
 
 import { SubmitButton } from 'ui/components/SubmitButton'
@@ -14,6 +14,7 @@ type FormData = {
   email: string
   password: string
   enter_as: string
+  terms: string
 }
 
 export function SignUp() {
@@ -52,7 +53,6 @@ export function SignUp() {
               },
             })}
           />
-
           <TextField
             label='E-mail'
             id='email'
@@ -62,7 +62,6 @@ export function SignUp() {
               required: true,
             })}
           />
-
           <S.Password>
             <TextField
               label='Senha'
@@ -78,17 +77,29 @@ export function SignUp() {
               <FiEye size={20} />
             </button>
           </S.Password>
-
           <S.ContentForm>
             <label htmlFor='enter_as'>Entrar como</label>
-            <select {...register('enter_as')}>
+            <select
+              {...register('enter_as', {
+                required: true,
+              })}
+            >
               <option value=''>selecione...</option>
               <option value='Empresa'>Empresa</option>
               <option value='Profissional'>Profissional</option>
               <option value='Usuário'>Usuário</option>
             </select>
           </S.ContentForm>
-
+          <input
+            type='checkbox'
+            {...register('terms', {
+              required: true,
+            })}
+          />
+          <p>
+            Aceito os <Link to='/termos'> Termos e condições</Link> e autorizo o
+            uso de meus dados de acordo com a Declaração de privacidade.
+          </p>
           <SubmitButton />
         </form>
       </S.Content>

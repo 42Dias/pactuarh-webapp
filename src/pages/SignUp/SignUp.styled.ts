@@ -19,6 +19,16 @@ export const Content = styled.div`
   @media (max-width: 1162px) {
     right: 10%;
   }
+
+  p {
+    margin: -23px 0 0 20px;
+    max-width: 330px;
+    font-size: 14px;
+  }
+
+  a {
+    color: ${theme.colors.neutral[200]};
+  }
 `
 
 export const Password = styled.div`
