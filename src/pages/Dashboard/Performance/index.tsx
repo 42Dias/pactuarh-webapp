@@ -38,9 +38,10 @@ export default function Performance() {
               </S.TrSecond>
               </S.Table>
                   </div>
+                </S.Container>
 
 
-              </S.Container>
+              
               <S.Container>
                   <S.Table>
                   <S.TrTitle>
@@ -66,21 +67,23 @@ export default function Performance() {
                 <S.Information>
                 <p> Auto Avaliação</p>
                 <S.ContainerForm>
-                <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
+                   <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
                 </S.ContainerForm>
                   </S.Information>
                    
                   <S.Information>
                   <p> Avaliação do gestor</p>
+
                   <S.ContainerForm>
-                  <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
+                     <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
                   </S.ContainerForm>
-                  </S.Information>
-
-
                   <S.Button>
                       <button> Enviar </button>
                   </S.Button>
+                  </S.Information>
+
+
+                
                 </S.Container>
 
              </S.Body>
