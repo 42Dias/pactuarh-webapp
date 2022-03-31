@@ -6,25 +6,6 @@ import { Link } from 'react-router-dom'
 
 
 export default function Performance() {
-
-  const [modalIsOpen, setIsOpen] = useState(false)
-  const [modalIsOpenNew, setIsOpenNew] = useState(false)
-
-  function openModal() {
-    setIsOpen(true)
-  }
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModalNew() {
-    setIsOpenNew(true)
-  }
-
-  function closeModalNew() {
-    setIsOpenNew(false)
-  }
     return(
             <>
              <S.Body>
@@ -81,13 +62,22 @@ export default function Performance() {
                 <S.Container> 
                 <S.Test>
                 <p> Auto Avaliação</p>
-
-
+                <S.ContainerForm>
+                <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
+                </S.ContainerForm>
                   </S.Test>
                    
                   <S.Test>
                   <p> Avaliação do gestor</p>
+                  <S.ContainerForm>
+                  <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
+                  </S.ContainerForm>
                   </S.Test>
+
+
+                  <S.Button>
+                      <button> Enviar </button>
+                  </S.Button>
                 </S.Container>
 
              </S.Body>
