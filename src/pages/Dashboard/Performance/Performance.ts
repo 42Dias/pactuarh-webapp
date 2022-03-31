@@ -23,16 +23,25 @@ export const Body = styled.body`
 
 `
 
-export const Test = styled.div`
+export const Information = styled.div`
+
   margin:25px;
+  padding:15px;
   width: 480px;
   height: 180px;
   background: #FEFDFF;
   border-radius: 5px;
 }
  
+h4{
+  display: flex;
+  flex-direction: column;
+}
 div{
   padding:14px;
+  display: flex;
+  flex-direction: row;
+ 
   
 }
 
@@ -42,11 +51,12 @@ export const Table = styled.table`
   /* width: 100%; */
   background: white;
   border-radius: 5px;
-  margin: 5% 5% 5% 25%;
+  margin: 5% 25%;
 
   h3{
 position:relative;
 left:95px;
+top:15px;
   }
 `
 
@@ -56,7 +66,15 @@ export const TrTitle = styled.tr`
  
   td {
     padding: 20px;
+    font-weight: 500;
   }
+
+h4{
+  position:relative;
+  left:140px;
+  top:20px;
+}
+
 `
 
 export const TrSecond = styled.tr`
@@ -68,6 +86,10 @@ export const TrSecond = styled.tr`
   button {
     background: transparent;
     border: 0;
+  }
+
+  .teste{
+    color: rgba(0, 0, 0, 0.5);
   }
 `
 

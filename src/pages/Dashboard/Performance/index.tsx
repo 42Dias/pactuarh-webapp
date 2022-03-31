@@ -14,31 +14,34 @@ export default function Performance() {
                   <S.Container>Bem vindo, Luciano 😁</S.Container>
                 </S.Title>
               <S.Container>
-                <S.Test>
-                   <div>
+                <S.Information>
                     <p>Avaliado: Giovanna </p>
-                    <p>Cargo:Dev. Júnior </p>
-                    <p>Departamento:Dev. Front end </p>
-                    <p>Avaliador:Luciano </p>
-                  </div>
-                  
-                </S.Test>
-                <S.Test>
+                    <p>Cargo: Dev. Júnior </p>
+                    <p>Departamento: Dev. Front end </p>
+                    <p>Avaliador: Luciano </p>
+                </S.Information>
+ 
                   <div>
-                    <h4> Critérios </h4> 
-                    <p> Insuficiente </p>
-                    <p> 1 - 4</p>
-                    <p> Suficiente</p>
-                    <p>5 - 7 </p>
-                    <p> Excede </p>
-                    <p>  8 - 10</p>
+                  <S.Table>
+              <S.TrTitle>
+                    <h4> Critérios </h4>
+              </S.TrTitle>
+              <S.TrTitle>
+                <td> Insuficiente</td>
+                <td >Suficiente</td>
+                <td>Excede</td>
+              </S.TrTitle>
+              <S.TrSecond>
+                <td className="teste">1 - 4</td>
+                <td className="teste">5 - 7</td>
+                <td className="teste">8 - 10</td>
+              </S.TrSecond>
+              </S.Table>
+                  </div>
 
-                  </div> 
-                </S.Test>
+
               </S.Container>
-
               <S.Container>
-                
                   <S.Table>
                   <S.TrTitle>
                     <div>
@@ -60,19 +63,19 @@ export default function Performance() {
 
 
                 <S.Container> 
-                <S.Test>
+                <S.Information>
                 <p> Auto Avaliação</p>
                 <S.ContainerForm>
                 <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
                 </S.ContainerForm>
-                  </S.Test>
+                  </S.Information>
                    
-                  <S.Test>
+                  <S.Information>
                   <p> Avaliação do gestor</p>
                   <S.ContainerForm>
                   <input type='text' placeholder='Registre as evidencias que embasaram a nota' />
                   </S.ContainerForm>
-                  </S.Test>
+                  </S.Information>
 
 
                   <S.Button>
